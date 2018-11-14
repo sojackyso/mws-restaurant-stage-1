@@ -168,9 +168,12 @@ createRestaurantHTML = (restaurant) => {
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  // add alt text for images
+  image.alt = `${restaurant.name} in ${restaurant.neighborhood} for ${restaurant.cuisine_type} cuisine`;
   li.append(image);
 
-  const name = document.createElement('h1');
+// make sure header tag matches what you used for Restaurant Name and is not h1 (already used for Restaurant Reviews main header)
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
   li.append(name);
 

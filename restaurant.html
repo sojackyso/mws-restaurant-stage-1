@@ -35,14 +35,15 @@
   <main id="maincontent">
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" role="application" aria-label="Mapbox Map"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
     <div id="restaurant-info-module">
     <section id="restaurant-container">
       <div id="restaurant-name-and-photo">
-      <h1 aria-label="Restaurant Name" id="restaurant-name"></h1>
+        <!-- semantics - h1 already reserved for Restuarant Reviews header so use h2-h6 -->
+      <h2 aria-label="Restaurant Name" id="restaurant-name"></h2>
       <img id="restaurant-img">
     </div>
     <div id="restaurant-hours-section">

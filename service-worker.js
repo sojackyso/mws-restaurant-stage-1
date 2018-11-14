@@ -2,6 +2,7 @@
 // serviceWorker will let us cache things so content is available offline
 // Resource guide: https://hacks.mozilla.org/2016/03/debugging-service-workers-and-push-with-firefox-devtools/
 // If using Mozilla Firefox Developer Edition, page to start service worker for debugging app: about:debugging#workers
+// For more reading - https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle
 const cacheID = 'cacheaway';
 
 // files you want to cache
